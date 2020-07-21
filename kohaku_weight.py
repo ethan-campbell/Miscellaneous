@@ -22,8 +22,9 @@ plt.gca().axvspan(xmin=datetime(2020,1,5),xmax=datetime(2020,1,5,12,0,0),
                   ymin=0,ymax=1,facecolor='maroon',alpha=0.7,zorder=1,label='Adopted')
 plt.gca().axvspan(xmin=datetime(2020,1,29),xmax=datetime(2020,4,21),
                   ymin=0,ymax=1,facecolor='0.5',alpha=0.3,zorder=1,label='On GS')
-plt.xticks([datetime(2019,12,1),datetime(2020,1,1),datetime(2020,2,1),datetime(2020,3,1),datetime(2020,4,1)])
-plt.xlim([datetime(2019,12,1),datetime(2020,4,23)])
+plt.xticks([datetime(2019,12,1),datetime(2020,1,1),datetime(2020,2,1),datetime(2020,3,1),datetime(2020,4,1),
+            datetime(2020,5,1),datetime(2020,6,1),datetime(2020,7,1)])
+plt.xlim([datetime(2019,12,1),datetime(2020,7,20)])
 plt.gcf().autofmt_xdate()
 plt.grid(alpha=0.5)
 plt.legend(loc='lower left')
